@@ -1,0 +1,679 @@
+@font-face{
+    font-family: "wildWest";
+    src: url("./fonts/Smokum-Regular.ttf");
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: Lato, Helvetica, sans-serif;
+    overflow: hidden;
+    background-color: #080705;
+}
+p{
+    margin: 0;
+}
+h2, h3, h4{
+    font-family: wildWest;
+    letter-spacing: 0.07em;
+}
+
+
+
+#fullpage{
+    height:100vh;
+    overflow: hidden;
+}
+#fullpage section{
+    height:100vh;
+}
+#fullpage section h2{
+    margin: 0;
+    padding: 0;
+}
+#fullpage section:nth-child(1){
+    background-image: url("./images/landingPageBG.jpg");
+    background-position: center;
+    background-size: cover;
+}
+/*
+#fullpage section:nth-child(2){
+    background-color: #4B543B;
+}*/
+#fullpage section:nth-child(3){
+    background-image: url("./images/landingPageBG.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#fullpage section:nth-child(4){
+    background-image: url("./images/landingPageBG.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: 3%;
+}
+#fullpage section:nth-child(5){
+    background-image: url("./images/landingPageBG.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: 3%;
+} 
+#fullpage section:nth-child(6){
+    background-image: url("./images/landingPageBG.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: 3%;
+} 
+.homeListText{
+    display: none;
+}
+.sticky{
+    position: absolute;
+    right: 0.6em;
+    top:40%;
+    z-index: 3;
+}
+.sticky ul{
+    list-style-type: none;
+}
+.sticky li{
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    border: 2px solid white;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.sticky li p{
+    position: absolute;
+    margin-top: -10%;
+    right: 60%;
+    font-size: 1.4em;
+    color: white;
+    text-align: right;
+    font-family: wildWest;
+    letter-spacing: 0.1em;
+}
+.selected{
+    background-color: white;
+}
+
+
+
+.homeInfo{
+    width: 100%;
+    height: 100%;
+    padding: 3em;
+    box-sizing: border-box;
+    color: white;
+}
+.homeInfo h2{
+    width: fit-content;
+    position: relative;
+    display: block;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    font-size: 7em;
+    font-weight: bold;
+    font-family: wildWest;
+    letter-spacing: 0.05em;
+}
+.homeInfo h4{
+    width: fit-content;
+    position: relative;
+    display: block;
+    left: 50%;
+    bottom: -50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    font-family: wildWest;
+    letter-spacing: 0.1em;
+}
+.homeInfo button{
+    width: 24%;
+    height: 14%;
+    position: relative;
+    display: block;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    border: #cc100d  solid 0.2em;
+    color: #cc100d ;
+    cursor: pointer;
+}
+.homeInfo p{
+    margin: auto;
+    font-size: 1.31415926em;
+    font-weight: bold;
+}
+.homeInfo button:hover{
+    background-color: #cc100d ;
+    color: white;
+    border: none;
+}
+
+
+.about{
+    width: 100%;
+    height: 100%;
+    text-align: center;    
+    box-sizing: border-box;
+    color: white;
+}
+.about h3{
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+.about p{
+
+    font-size: 1em;
+}
+.about img{
+    position: absolute;
+    width: 20em;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.col{
+    float: left;
+    width: 33.3%;
+    box-sizing: border-box;
+    padding: 1em;
+}
+.aboutBestCourse{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-image: url("./images/about_bestCourse.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.aboutBestMostar{
+    float: left;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    background-image: url("./images/about_bestMostar.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.aboutBestMostar p{
+    font-size: .75em;
+}
+.aboutBest{
+    float: left;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    background-image: url("./images/about_best.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.aboutBest p{
+    font-size: .75em;
+}
+.upperLeft{
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 70px;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    color: white;
+}
+.upperRight{
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 70px;
+    top: 10px;
+    right: -110px;
+    background-color: white;
+    color: white;
+}
+.centerText{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    top: 25%;
+    padding: 5% 10% 5% 10%;
+    background-color: rgba(18, 18, 19, 0.7);
+    transition: 0.3s ease-in;
+}
+.centerText:hover{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.centerText:hover > img.front{
+    display: none;
+}
+p.rear{
+    display:none;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+.centerText:hover > p.rear{
+    display: block;
+}
+
+
+.usefulInfo{
+    position: relative;
+    display: block;
+    width: 80%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.kocka{
+    background-image: url("./images/dirtyFrame.png");
+    background-position: center;
+    background-size: cover;
+    background-color: #B80C09;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    width: 25vw;
+    height: 25vw;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    margin: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.kocka p{
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    font-family: wildWest;
+    letter-spacing: 0.1em;
+    font-size: 2em;
+    font-weight: bold;
+}
+.kocka:hover{
+    background-color: transparent;
+    background-color:#807d7d;
+    color: white;
+    border: none;
+}
+.kocka img{
+    margin-top: 10%;
+}
+
+
+.sponzors h2{
+    position: relative;
+}
+
+
+.contact{
+    box-sizing: border-box;
+    position: relative;
+    width: 80%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: none;
+    padding: 1em;
+}
+h2{
+    width: fit-content;
+    position: relative;
+    display: block;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    font-size: 3em;
+    color: white;
+}
+.contact h4{
+    width: fit-content;
+    position: relative;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    color: white;
+}
+.contactCol{
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    width: 33%;
+    height: 70%;
+    color: white;
+    text-align: center;
+    padding: 1%;
+}
+.contactCol p{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+}
+.contactCol span{
+    padding: 5px;
+}
+.contact>.col-md-4{
+    color: white;
+    text-align: center;
+    flex: 0 0 30.333333% !important;
+    height: fit-content;
+    padding-bottom: 2%;
+}
+.bg-primary{
+    background-color: rgba(184, 12, 9, .8) !important;
+}
+.card {
+    box-sizing: border-box;
+    margin: 0 1rem;
+    border-radius: 0;
+    width: 80;
+}
+.row{
+    flex-wrap: nowrap;
+}
+.card-header{
+    font-weight: bold;
+}
+
+
+.paxContainer{
+    height: 80vh;
+}
+.table{
+    height: 100%;
+}
+.table-scroll tbody {
+    position: absolute;
+    overflow-y: scroll;
+    height:100%;
+    width: 100%;
+}
+.table-scroll tr{
+    width: 100%;
+}
+
+
+
+
+
+/* Tablet (kurac) ----------- */
+@media only screen and (max-width : 1024px){
+    .kocka p{
+        top: 20%;
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 420px) {
+    .sticky{
+        display: none;
+    }
+
+
+    .homeInfo{
+        padding: 1em;
+    }
+    .homeInfo h2{
+        width: 100%;
+        top: 10%;
+        font-size: 4em;
+        text-align: center;
+    }
+    .homeInfo h4{
+        position: relative;
+        top: 40%;
+        font-size: 2em;
+    }
+    .homeInfo button{
+        position: relative;
+        width: 50%;
+        top: 25%;
+        background-color: #B80C09;
+        color: white;
+        border: none;
+    }
+    .homeInfo p{
+        margin: auto;
+        font-size: 1.31415926em;
+        font-weight: bold;
+    }
+
+
+
+    .about{
+        padding: 0;
+    }
+    .about p{
+        display: inline-block;
+        position: relative;
+        font-size: 0.8em;
+        top: 5%;
+        transform: translateY(-50%);
+    }
+    .about img{
+        width: 12em;
+    }
+    .col{
+        float: left;
+        width: 33.3%;
+        box-sizing: border-box;
+        padding: 1em;
+    }
+    .aboutBestCourse{
+        float: left;
+        width: 100%;
+        height: 33%;
+        background-image: url("./images/about_bestCourse.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .aboutBestMostar{
+        display: block;
+        float: left;
+        width: 100%;
+        height: 33%;    
+        top: 33%;
+        background-image: url("./images/about_bestMostar.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .aboutBest{
+        display: block;
+        float: left;
+        width: 100%;
+        height: 33%;
+        top: 66%;
+        background-image: url("./images/about_best.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .upperLeft{
+        display: block;
+        position: relative;
+        width: 100px;
+        height: 70px;
+        top: 10px;
+        left: 10px;
+        background-color: white;
+        color: white;
+    }
+    .upperRight{
+        display: block;
+        position: relative;
+        width: 100px;
+        height: 70px;
+        top: 10px;
+        right: -110px;
+        background-color: white;
+        color: white;
+    }
+    .centerText{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        padding: 0.4em;
+        line-height: 0.8em;
+        transform: translateY(0);
+    }
+    
+    .centerText:hover{
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+    .centerText:hover > img.front{
+        display: none;
+    }
+    p.rear{
+        display:none;
+        -webkit-transform: rotateY(-180deg);
+        -moz-transform: rotateY(-180deg);
+        -o-transform: rotateY(-180deg);
+        -ms-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+    }
+    .centerText:hover > p.rear{
+        display: block;
+    }
+
+
+
+
+    .usefulInfo{
+        width: 100%;
+        height: 90%;
+        padding: 0.2em;
+    }
+    .kocka{
+        background-color: transparent;
+        background-color:#B80C09;
+        color: white;
+        border: none;
+        display: block;
+        float: left;
+        box-sizing: border-box;
+        width: 50vw;
+        height: 50vw;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+        margin: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .kocka p{
+        position: relative;
+        top: 20%;
+        transform: translateY(-50%);
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .kocka:hover{
+        background-color: transparent;
+        background-color:#B80C09;
+        color: white;
+        border: none;
+    }
+    .kocka img{
+        width: 20vw;
+        height: 20vw;
+        margin-top: 10%;
+    }
+
+
+
+    .contact{
+        width: 100%;
+        height: 70%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border: none;
+        padding: 0 1% 0 1%;
+        margin: 0;
+    }
+    h2{
+        top: 0;
+    }
+    .contact h4{
+        width: fit-content;
+        position: relative;
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.5em;
+        color: white;
+        font-weight: bold;
+    }
+    .contactCol{
+        position: relative;
+        display: block;
+        float: left;
+        box-sizing: border-box;
+        width: 100%;
+        height: 33%;
+        color: white;
+        text-align: center;
+        padding: 1%;
+    }
+    .contactCol p{
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+        font-size: 1.2em;
+        line-height: 0.5em;
+    }
+    .contactCol span{
+        padding: 0.2em;
+    }
+    .card-body > i{
+        display: inline;
+    }
+
+    .card {
+        margin-bottom: 5%;
+        height: 8rem;
+        border-radius: 0;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .card-header  {
+        padding: .25rem 1.25rem;
+        font-weight: bold;
+        background-color: transparent;
+        border-bottom:2px solid rgba(0,0,0,.4);
+    }
+
+    .card-body  {
+        padding: .35rem;
+    }
+
+    .card span, .card i {
+        font-size: 12   0%;
+    }
+    .bg-primary{
+        background-color: rgba(184, 12, 9, 0.5) !important;
+    }
+    .col-md-4{
+        padding: 0;
+    }
+}
